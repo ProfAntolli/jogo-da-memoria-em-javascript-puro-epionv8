@@ -1,0 +1,86 @@
+* {
+    margem :  0 ;
+    preenchimento :  0 ;
+    box-sizing : border-box;
+    font-family :  'Justo' , sem serifa;
+}
+
+corpo {
+    estilo da fonte : itálico;
+    exibição : flexível;
+    align-items : centro;
+    justificar-conteúdo : centro;
+    altura :  100 vh ;
+}
+
+. cartão {
+
+    largura :  120px ; _
+    altura :  120px ; _
+    posição : relativa;
+
+    transform-style : preserve-3d;
+    transição : transforme 0,5 s ;
+}
+
+. card_front , . cartão_back {
+    posição : absoluta;
+
+    altura :  100 % ;
+    largura :  100 % ;
+    exibição : flexível;
+    align-items : centro;
+    justificar-conteúdo : centro;
+    raio da borda :  20 px ;
+    box-shadow :  10 px  10 px  10 px  rgba ( 0 ,  0 ,  0 ,  0,45 );
+    backface-visibility : oculto;
+}
+
+. virar {
+    transform :  girarY ( 180 graus );
+}
+
+. card_front {
+cor de fundo :  # 101C2C ;
+transform :  girarY ( 180 graus );
+cor : azul alice;
+}
+
+. cartão_back {
+cor de fundo :  # 05C3FF ;
+cor :  # 101C2C ;
+tamanho da fonte :  30 px ;
+}
+
+#gameover { _
+    posição : absoluta;
+    largura :  100 % ;
+    altura :  100 % ;
+    cor de fundo :  rgba ( 0 ,  0 ,  0 ,  0,9 );
+    cor : azul alice;
+    tamanho da fonte :  50 px ;
+    exibição : nenhum;
+    align-items : centro;
+    justificar-conteúdo : centro;
+    flex-direction : coluna;
+    topo :  0 ;
+
+}
+
+
+# reinicie {
+    preenchimento :  20px ; _
+    tamanho da fonte :  20 px ;
+    cor de fundo : amarelo;
+    borda : nenhuma;
+    raio da borda :  10 px ;
+    margem superior :  10 px ;
+}
+
+#tabuleiro { _
+    largura máxima :  700 px ;
+    exibição : grade;
+    grid-template :  1 fr  1 fr  1 fr  1 fr  1 fr /  1 fr  1 fr  1 fr  1 fr ;
+    intervalo :  20 px ;
+
+}
